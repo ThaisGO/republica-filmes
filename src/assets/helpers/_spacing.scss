@@ -1,0 +1,94 @@
+////
+// Loop para adicionar classes de margin 1px até 80px
+////
+@for $i from 1 through 80 {
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}
+
+////
+// Loop para adicionar classes de padding-top 1px até 80px
+////
+@for $i from 1 through 80 {
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i}px;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i}px;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i}px;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+}
+
+////
+// Reset margin
+////
+.m-0 {
+  margin: 0px;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+.ml-0 {
+  margin-left: 0px;
+}
+.mr-0 {
+  margin-right: 0px;
+}
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+////
+// Reset padding
+////
+.p-0 {
+  padding: 0px;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pl-0 {
+  padding-left: 0px;
+}
+.pr-0 {
+  padding-right: 0px;
+}
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+////
+// Loop para adicionar classes de largura 1% até 100%
+////
+@for $i from 1 through 100 {
+  .col-w-#{$i} {
+    width: #{$i * 1%};
+  }
+}
+
+////
+// Loop para adicionar classes de Altura 1% até 100%
+////
+@for $i from 1 through 100 {
+  .col-h-#{$i} {
+      height: #{$i * 1%};
+  }
+}

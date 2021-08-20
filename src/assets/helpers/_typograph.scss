@@ -1,0 +1,43 @@
+////
+// Loop para adicionar classes tamanho de fonte 1px até 50px
+////
+@for $i from 1 through 50 {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+a.fs:hover {
+  text-decoration: none;
+  // color: var(--gray-400, #828282);
+}
+
+////
+// Font weight
+////
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+////
+// TEXT CASE
+////
+.text-uppercase {
+ text-transform: uppercase;
+}
+
+.text-center{
+  text-align: center;
+}
