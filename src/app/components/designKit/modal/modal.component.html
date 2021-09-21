@@ -1,0 +1,21 @@
+<div class="simple-modal-shadow" (click)="shadowClick()" [class.showing]="isShowing"></div>
+<div class="simple-modal-content custom-scroller" [class.showing]="isShowing">
+    <div [className]="'simple-modal-content-wrapper modal-size-' + sizeModal">
+        <div class="header">
+            <h4 class="title fs-32 fw-light">{{title}}</h4>
+            <a (click)="dismiss($event); closeModal()" href="#">
+              <i class="icon icon-close"></i>
+            </a>
+        </div>
+
+        <div class="content">
+            <ng-content></ng-content>
+            <div class="actions" *ngIf="action">
+                <p *ngIf="errorMessage" class="mt-10 mr-100 fw-light cl-third">{{errorMessage}}</p>
+                <a class="action-dismiss" (click)="dismiss($event)" href="#">{{dismissButtonText}}</a>
+                <button [disabled]="waiting" class="btn bt-sm bg-orange" [class.loading]="waiting" (click)="handleClick()">{{!waiting ? buttonText : 'Aguarde...'}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
