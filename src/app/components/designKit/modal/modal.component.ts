@@ -8,7 +8,7 @@ import { Component, EventEmitter, HostListener, Input, OnInit, Output } from '@a
 export class ModalComponent {
 
   /** Mostrar modal sim ou não */
-  isShowing: boolean = true;
+  isShowing: boolean = false;
   /** Título que aparecera no header da modal */
   @Input("title") title: string = "Título";
   /** Texto do botão de enviar */
